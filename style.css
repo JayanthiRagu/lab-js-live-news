@@ -1,15 +1,7 @@
-*{
+body{
     margin: 0px;
     padding: 0px;
     box-sizing: 0px;
-}
-body{
-
-}
-.container{
-    border: 1px solid orangered;
-    height: auto;
-    width: auto;
 }
 .header{
     display: flex;
@@ -24,24 +16,41 @@ body{
     flex-wrap: wrap;
     gap: 20px;
 }
-.custom-select{
-    background-color: orangered;
+.panel1{
+    display: inline-flex;
+    padding:55px;
+    flex-wrap: wrap;
+    gap: 90px;
 }
-nav#dot-nav {
-    position: fixed;
-    right: 20px;
-    top: 20px;
-  }
-  
-  nav#dot-nav a {
-    border: 1px solid #121212;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-    display: block;
-    margin: 10px;
-  }
-  
-  nav#dot-nav a.active, nav#dot-nav a:first-child {
-    background: #121212;
-  }
+.panel{
+    position:relative;
+    margin: 5px;
+    padding:10px;
+    border-collapse: collapse;
+    width:500px;
+    height:auto;
+    box-shadow: 0 0 10px #222;
+    border-radius: 2px;
+}
+.title{
+  padding:5px;
+  font-size: larger;
+  font-weight: bold;
+}
+.description{
+  padding:5px;
+  font-size: medium;
+}
+span{
+  cursor: pointer;
+}
+.active,span:hover
+{
+  background-color: rgb(24, 11, 11);
+  padding:6px;
+}
+
+select{
+  height: 30px;
+  width:150px;
+}
